@@ -1,0 +1,727 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;   
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;  
+}
+
+h4{
+    font-size: 20px;
+    color: #222;
+}
+
+h6{
+    font-weight: 20px;
+    font-size: 12px;
+}
+
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.sec1 {
+    padding: 40px 80px;
+}
+
+.sec2 {
+    margin: 40px 0
+}
+
+button.reg {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: red;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+.go {
+    color: #800000;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background: #e8ded1;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    overflow: auto;
+
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+    
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #800000;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
+#bant{
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/135/762/408/sony-vinyl-record-player-wallpaper-preview.jpg");
+    height: 75vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0%;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#bant h4{
+    padding-bottom: 15px;
+    color: antiquewhite;
+}
+
+#bant h2{
+    color: white;
+}
+
+#bant p{
+    color: antiquewhite;
+}
+
+#bant button{
+    background-image: url("https://htmlcolorcodes.com/assets/images/colors/wheat-color-solid-background-1920x1080.png");
+    background-color: transparent;
+    color: #222;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700px;
+    font-size: 15px;
+}
+
+#product {
+    text-align: center;
+
+}
+ 
+#product .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#product .pro{
+    width: 22%;
+    min-width: 250px;
+    min-height: 300px;
+    padding: 10px 5px;
+    border: 1px solid #cce7d0;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 5px 5px;
+    transition: 0.2 ease;
+    position: relative;
+    background-color: white;
+}
+
+#product .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product .pro img{
+    width: 100%;
+    height: 330px;
+}
+
+#product .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product .pro .des span{
+    color: #606063;
+    font-size: 12px;
+}
+
+#product .pro .des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+#product .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-size: 700;
+    color: rgb(119, 16, 16);
+}
+
+#product .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: wheat;
+    font-weight: 500;
+    color: rgb(253, 110, 110);
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir8q70ZONF516fm1zJT9_6p3gNN2v2ugm_yTSUJZxJZZEO4wYgGiwGL9-WZUx2ok57m5tX2dQUTuEfvXJG12s7sSxb8vW260LxT5AhZxuPSnjZ6Q2Wdf3HfDgK1hTUmmhYWY8yrsiITCgdA2GhpOQlJdIZr03p43RTHjWNSdf1-1mL8MVgmFSTq6EvrQ/s0/COOL_PATTERN1142023D.png");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner h4{
+    color: white;
+    font-size: 16px;
+    background-color: #1a1a1a;
+}
+
+#banner h2{
+    color: white;
+    font-size: 30px;
+    background-color: #1a1a1a;
+}
+
+#banner h2 span{
+    color: red;
+}
+
+#banner button:hover {
+    background-color: #088178;
+    color: #fff; 
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    border-top: 3px solid red;
+    background-color: #e8ded1;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+footer .col .info {
+    padding: 0px 0px 70px 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+footer .col .info a{
+    font-size: 30px;
+}
+
+footer .logo {
+    margin-bottom: 10px;
+    max-width: 60%; max-height: 60%;
+}
+
+footer h4{
+    font-size: 30px;
+    padding-bottom: 5px;
+}
+
+footer p{
+    font-size: 19px;
+    margin: 0 0 3px 0;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: gray;
+    margin: 0 0 8px 0;
+}
+
+footer .app i {
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .app i:hover,
+footer a:hover {
+    color: #800000;
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
+
+#pop-banner{
+    background-image: url("https://i8.amplience.net/i/naras/RA_2022_In_Review_Pop_HeroCollage_1644x925-.jpg?w=821&sm=c");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#pop-banner h2,
+#pop-banner p {
+    color: white;
+} 
+
+#pages{
+    text-align: center;
+}
+
+#pages a{
+    text-decoration: none;
+    background-color: #800000;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: antiquewhite;
+    font-weight: 600;
+}
+
+#pages a i{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#propa {
+    display: flex;
+    margin-top: 20px;
+    background-image: url("https://t4.ftcdn.net/jpg/00/64/86/79/360_F_64867951_8NvHbL9rFvD7HAz1U3rlkzVNkJcf4iC3.jpg");
+}
+
+#propa .imgpro {
+    width: 40%;
+    margin-right: 50px;
+}
+
+.smallimg {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.smallimgcol {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#propa .onepro {
+    width: 50%;
+    padding-top: 30px;
+}
+
+#propa .onepro input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#propa .onepro input:focus {
+    outline: none;
+}
+
+#propa .onepro button{
+    background-color: antiquewhite;
+    color: #800000;
+}
+
+#spot {
+    border-top: 3px solid red;
+}
+
+#about-banner {
+    background-image: url("https://www.prsformusic.com/-/media/images/mmagazine/mm-article-images/features/vinyl-revival.png");
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    
+}
+
+#about-banner h2,
+#about-banner h4{
+    color: wheat;
+}
+
+#top {
+    display: flex;
+    align-items: center;
+}
+
+#top div{
+    padding-left: 44px;
+}
+
+#top img{
+    width: 50%;
+    height: auto;
+}
+
+#formdit {
+    border-top: 3px solid red;
+    background-color: rgba(236, 236, 236, 0.438);
+    
+}
+
+#formdit form span{
+    color: #800000;
+    font-size: 20px;
+}
+
+#formdit form h2 {
+    color: #800000;
+    font-size: 55px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+
+#formdit form{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
+}
+
+#formdit form input{
+    width: 50%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+#formdit form textarea{
+    width: 100%;
+    height: 40vh;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+#formdit form button {
+    background-color: #800000;
+    color: #e8ded1;
+}
+#cart{
+    overflow-x: auto;
+}
+#cart table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+#cart table img{
+    width: 70px;
+}
+#cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+#cart table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+#cart table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+}
+#cart table td:nth-child(5) input {
+    width: 70px;
+    padding: 10px;
+}
+#cart table thead td{
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+#add{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#Subtotal{
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #e8ded1;
+    padding: 25px;
+}
+#Subtotal table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#Subtotal table td{
+    width: 50%;
+    border: 1px solid #e8ded1;
+    padding: 15px;
+    font-size: 20px;
+}
+#Subtotal button {
+    background-color: #800000;
+    color: antiquewhite;
+    padding: 15px 30px;
+}
+
+
+
+
+
+
+@media (max-width: 799px) {
+    .sec1 {
+        padding: 40px 40px;
+    }
+
+
+    
+    #header .logo {
+        display: none;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: wheat;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.01);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i {
+        color: #800000;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #800000;
+        font-size: 24px;
+    }
+
+    .active {
+        right: 0px !important;
+    }
+
+    #lgbag{
+        display: none;
+    }
+
+    #product .pro-container {
+        justify-content: center;
+    }
+
+    #product .pro {
+        margin: 14px;
+    }
+
+    #about-banner h4, 
+    #about-banner h2 {
+        color: #800000;
+    }
+
+}
+
+@media (max-width: 477px) {
+    .sec1{
+        padding: 20px;
+    }
+    #header {
+        padding: 10px 30px ;
+    }
+
+    #header {
+        padding: 10px 30px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    h2{
+        font-size: 32px;
+    }
+
+    #bant {
+        padding: 0 20px;
+        background-position: 55%;
+    }
+
+    #product .pro {
+        width: 100%;
+    }
+
+    #banner {
+        height: 40vh;
+    }
+
+    #propa {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #propa .imgpro {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    #propa .onepro {
+        width: 100%;
+    }
+
+    #top {
+        flex-direction: column;
+    }
+
+    #top img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #top div{
+        padding-left: 0px;
+    }
+
+    #formdit {
+        margin: 10px;
+        padding: 30px 10px;
+        flex: wrap;
+    }
+
+    #formdit form {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #cart-add {
+        flex-direction: column;
+    }
+    #Subtotal {
+        width: 100%;
+        padding: 20px;
+    }
+
+
+}

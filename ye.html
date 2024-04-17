@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Taklit</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="images/image-removebg-preview.png" width="200" height="80" class="logo" alt="web-logo"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="pop.html">Vinyls</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="cart.html"><i class="bi bi-cart3"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="propa" class="sec1">
+        <div class="imgpro">
+            <img src="https://m.media-amazon.com/images/I/61tQIiY0zSL._UF1000,1000_QL80_.jpg"  width="100%" id="bigimg" alt="product-image">
+            <div class="smallimg">
+                <div class="smallimgcol">
+                    <img src="https://m.media-amazon.com/images/I/61tQIiY0zSL._UF1000,1000_QL80_.jpg" width="100%" class="sameimg" alt="same product image">
+                </div>
+                <div class="smallimgcol">
+                    <img src="https://images.genius.com/f184836c6a7a7d518874d1d687201c2f.918x918x1.jpg" width="100%" class="sameimg" alt="same product image">
+                </div>
+            </div>
+        </div>
+        <div class="onepro">
+            <h4>Home / Hip-Hop</h4>
+            <h1>Eminem - The Eminem Show</h1>
+            <h2>15$</h2>
+            <input type="number" value="1">
+            <button class="reg">Add To Cart</button>
+            <p><strong>Artist: </strong>Eminem</p>
+            <p><strong>Album Name: </strong>The Eminem Show</p>
+            <p><strong>Year Of Release: </strong>2002</p>
+            <p><strong>Genre: </strong>HIP-HOP</p>
+        </div>
+                
+    </section>
+
+    <section id="spot" class="sec1">
+        <div class="spotify">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2cWBwpqMsDJC1ZUwz813lo?utm_source=generator" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <footer class="sec1">
+        <div class="col">
+            <img class="logo" src="images/image-removebg-preview.png" alt="logo">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>628 Alamitos Ave, Long Beach, California</p>
+            <p><strong>Phone: </strong>+972 53 221 4324/ +972 3 445 4214</p>
+            <p><strong>Opening Hours: </strong>8:00-23:00, Sun-Thu. 8:00-17:00, Fri. 18:00-00:00, Sat.</p>
+            <div class="app">
+                <h4>Socials</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <p>Secured Payment Gateways</p>
+            <img src="https://raw.githubusercontent.com/tech2etc/Build-and-Deploy-Ecommerce-Website/main/img/pay/pay.png" alt="payment">
+        </div>
+        <div class="copyright">
+            <p>© 2023 Daniel Orliov - Taklit - All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        var bigimg = document.getElementById("bigimg");
+        var sameimg = document.getElementsByClassName("sameimg");
+        sameimg[0].onclick =function(){
+            bigimg.src = sameimg[0].src;
+        }
+        sameimg[1].onclick =function(){
+            bigimg.src = sameimg[1].src;
+        }
+    </script>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
